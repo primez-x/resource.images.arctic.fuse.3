@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="resource.images.arctic.fuse.3" name="Arctic Fuse 3 Images" version="0.0.1" provider-name="jurialmunkey, primez-x">
+    <extension point="kodi.resource.images" compile="true" type="arctic.fuse.3" />
+    <requires>
+        <import addon="kodi.resource" version="1.0.0" />
+    </requires>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Artwork for Arctic Fuse 3</summary>
+        <description lang="en">Images from Arctic Fuse 3, originally by jurialmunkey and maintained by primez-x.</description>
+        <platform>all</platform>
+        <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
+        <source>https://github.com/primez-x/resource.images.arctic.fuse.3</source>
+        <news>v0.0.1
+- Publish the original Arctic Fuse 3 image library as a separate dependency.</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/extras/screenshots/1CPh51H.jpg</screenshot>
+            <screenshot>resources/extras/screenshots/3W3Zhqc.jpg</screenshot>
+            <screenshot>resources/extras/screenshots/HSRRKbk.jpg</screenshot>
+            <screenshot>resources/extras/screenshots/PAFvO1x.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
