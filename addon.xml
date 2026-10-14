@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="resource.images.arctic.fuse.3" name="Arctic Fuse 3 Images" version="0.0.4" provider-name="jurialmunkey, primez-x">
+<addon id="resource.images.arctic.fuse.3" name="Arctic Fuse 3 Images" version="0.0.5" provider-name="jurialmunkey, primez-x">
     <extension point="kodi.resource.images" compile="true" type="arctic.fuse.3" />
     <requires>
         <import addon="kodi.resource" version="1.0.0" />
@@ -10,7 +10,10 @@
         <platform>all</platform>
         <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
         <source>https://github.com/primez-x/resource.images.arctic.fuse.3</source>
-        <news>v0.0.4
+        <news>v0.0.5
+- Remove seven orphaned screenshot files from the resource pack.
+
+v0.0.4
 - Show the bottom count and hairline in the full-height Media List preview.
 
 v0.0.3

@@ -24,6 +24,13 @@ class ArcticFuseResourceAddonTests(unittest.TestCase):
         )
         self.assertIn("Creative Commons", (ADDON_ROOT / "LICENSE.txt").read_text())
 
+    def test_every_shipped_screenshot_is_a_metadata_asset(self):
+        addon = ET.parse(ADDON_ROOT / "addon.xml").getroot()
+        listed = {n.text for n in addon.findall("./extension/assets/screenshot")}
+        shipped = {p.relative_to(ADDON_ROOT).as_posix()
+                   for p in (ADDON_ROOT / "resources/extras/screenshots").iterdir() if p.is_file()}
+        self.assertEqual(shipped, listed)
+
     def test_browse_directories_and_metadata_assets_exist(self):
         extras = ADDON_ROOT / "resources" / "extras"
         for directory in (
